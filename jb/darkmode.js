@@ -2,7 +2,7 @@
 
 var isDarkMode = false;
 
-if(document.cookie == "true;")
+if(getCookie(dark) = "true")
 {
     darkOn(false)
 }
@@ -30,7 +30,7 @@ function darkOn(saveCookie)
     isDarkMode = true;
     if(saveCookie)
     {
-        document.cookie = "true;"
+        document.cookie = "dark=true; expires=Tue, 19 Jan 2038 00:00:00 UTC"
     }
     console.log("dark mode toggled on");
 }
@@ -42,7 +42,27 @@ function darkOff(saveCookie)
     isDarkMode = false;
     if(saveCookie)
     {
-        document.cookie = "false;"
+        document.cookie = "dark=false; expires=Tue, 19 Jan 2038 00:00:00 UTC"
     }
     console.log("dark mode toggled off");
 }
+
+function getCookie(cname) 
+{
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) 
+    {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') 
+      {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) 
+      {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
