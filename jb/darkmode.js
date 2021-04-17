@@ -2,11 +2,12 @@
 
 var isDarkMode = false;
 
-if(getCookie("dark") = "true")
+console.log("dark cookie = " + getCookie("dark"));
+if(getCookie("dark") == "true")
 {
     darkOn(false)
 }
-else
+else if(getCookie("dark") == "false")
 {
     darkOff(false);
 }
