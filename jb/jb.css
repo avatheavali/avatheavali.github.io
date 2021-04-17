@@ -1,0 +1,29 @@
+#page
+{
+    font-family: 'arial';
+    background-color: #fdfdfd;
+    color: #010101;
+}
+#header
+{
+    text-align: center;
+}
+#latestiOS
+{
+    text-align: center;
+}
+#latestJB
+{
+    text-align: center;
+}
+#singleButtonDiv
+{
+    text-align: right;
+}
+hr
+{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
