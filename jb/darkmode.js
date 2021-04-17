@@ -2,41 +2,47 @@
 
 var isDarkMode = false;
 
-if(document.cookie == "dark=true; expires=Tue, 19 Jan 2038 00:00:00 UTC")
+if(document.cookie == "true;")
 {
-    darkOn()
+    darkOn(false)
 }
 else
 {
-    darkOff();
+    darkOff(false);
 }
 
 document.getElementById("darkToggle").onclick = function()
 {
     if(isDarkMode)
     {
-        darkOff()
+        darkOff(true)
     }
     else
     {
-        darkOn();
+        darkOn(true);
     }
 }
 
-function darkOn()
+function darkOn(saveCookie)
 {
     document.getElementById("page").style.color = "#f9f9f9";
     document.getElementById("page").style.backgroundColor = "#232323";
     isDarkMode = true;
-    document.cookie = "dark=true; expires=Tue, 19 Jan 2038 00:00:00 UTC"
+    if(saveCookie)
+    {
+        document.cookie = "true;"
+    }
     console.log("dark mode toggled on");
 }
 
-function darkOff()
+function darkOff(saveCookie)
 {
     document.getElementById("page").style.color = "#010101";
     document.getElementById("page").style.backgroundColor = "#fdfdfd";
     isDarkMode = false;
-    document.cookie = "dark=false; expires=Tue, 19 Jan 2038 00:00:00 UTC"
+    if(saveCookie)
+    {
+        document.cookie = "false;"
+    }
     console.log("dark mode toggled off");
 }
