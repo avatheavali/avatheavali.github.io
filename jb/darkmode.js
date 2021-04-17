@@ -30,7 +30,7 @@ function darkOn(saveCookie)
     isDarkMode = true;
     if(saveCookie)
     {
-        document.cookie = "dark=true; expires=Tue, 19 Jan 2038 00:00:00 UTC"
+        setCookie("dark", "true", 1000);
     }
     console.log("dark mode toggled on");
 }
@@ -42,7 +42,7 @@ function darkOff(saveCookie)
     isDarkMode = false;
     if(saveCookie)
     {
-        document.cookie = "dark=false; expires=Tue, 19 Jan 2038 00:00:00 UTC"
+        setCookie("dark", "false", 1000);
     }
     console.log("dark mode toggled off");
 }
