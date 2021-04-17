@@ -30,7 +30,7 @@ function darkOn(saveCookie)
     isDarkMode = true;
     if(saveCookie)
     {
-        setCookie("dark", "true", 1000);
+        this.setCookie("dark", "true", 1000);
     }
     console.log("dark mode toggled on");
 }
@@ -42,7 +42,7 @@ function darkOff(saveCookie)
     isDarkMode = false;
     if(saveCookie)
     {
-        setCookie("dark", "false", 1000);
+        this.setCookie("dark", "false", 1000);
     }
     console.log("dark mode toggled off");
 }
@@ -65,4 +65,12 @@ function getCookie(cname)
       }
     }
     return "";
-  }
+}
+
+function setCookie(c_name, value, exdays) 
+{
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+    document.cookie = c_name + "=" + c_value;
+}
