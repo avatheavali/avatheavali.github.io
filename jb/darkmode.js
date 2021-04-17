@@ -2,7 +2,7 @@
 
 var isDarkMode = false;
 
-if(getCookie(dark) = "true")
+if(getCookie("dark") = "true")
 {
     darkOn(false)
 }
