@@ -39,7 +39,7 @@ function darkOn(saveCookie)
 function darkOff(saveCookie)
 {
     document.getElementById("page").style.color = "#010101";
-    document.getElementById("page").style.backgroundColor = "#fdfdfd";
+    document.getElementById("page").style.backgroundColor = "#fefefc";
     isDarkMode = false;
     if(saveCookie)
     {
