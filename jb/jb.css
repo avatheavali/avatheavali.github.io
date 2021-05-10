@@ -4,7 +4,20 @@
     background-color: #fefefc;
     color: #010101;
 }
+@media screen and (prefers-color-scheme: dark)
+{
+    #page
+    {
+    font-family: 'arial';
+    background-color: #232323;
+    color: #f9f9f9;
+    }
+}
 #header
+{
+    text-align: center;
+}
+#recJB
 {
     text-align: center;
 }
