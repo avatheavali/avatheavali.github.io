@@ -1,3 +1,0 @@
-7-Zip is licensed under the GNU LGPL, and can be found here: https://www.7-zip.org/
-These files are here because i need them in raw format
-if you have issue with this please tell me where i can get them official in this form
