@@ -1,0 +1,1 @@
+7-Zip is licensed under the GNU LGPL, and can be found here: https://www.7-zip.org/
