@@ -1,8 +1,8 @@
-Origin: KawaiiZenbo's Cydia repository
-Label: KawaiiZenbo's Cydia repository
+Origin: KawaiiZenbo's Repo
+Label: KawaiiZenbo's Repo
 Suite: stable
 Version: 1.0
 Codename: cydia-ios
 Architectures: iphoneos-arm
 Components: main
-Description: KawaiiZenbo's Cydia repository
+Description: KawaiiZenbo's Repo
