@@ -1,0 +1,76 @@
+Package: clutch13
+Version: 1.3
+Architecture: iphoneos-arm
+Maintainer: KJCracks
+Conflicts: clutch2
+Filename: ./debs/clutch13.deb
+Size: 44530
+MD5sum: 66d24451eca29a2ce4e130088cb6e552
+SHA1: 18dacef51e1edee2c09456812ce8a484e48a9f9a
+SHA256: 108a61c9d096d37d508e97a1701c9594b1b8c58708153511187c3c2b83d799d6
+Section: Terminal Support
+Description: High-speed iOS app decryption tool (iOS 5)
+Author: KJCracks
+Name: Clutch 1.3
+
+Package: clutch2
+Version: 2.0.4
+Architecture: iphoneos-arm
+Maintainer: KJCracks
+Filename: ./debs/clutch2.deb
+Size: 457524
+MD5sum: ab892f9fe73c37cd8bc174e31ce3e7b6
+SHA1: 6c4c3a43156e09b79f0b98f220341935096e8c78
+SHA256: 09e923dafaa848e44f73c86bf5d7b96641dc925b8392cd8bbe31e0fde1b85c2c
+Section: Terminal Support
+Description: High-speed iOS app decryption tool
+Author: KJCracks
+Name: Clutch 2.0.4
+
+Package: io.github.oldworldordr.fixifileicon
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: KawaiiZenbo
+Filename: ./debs/io.github.oldworldordr.fixifileicon.deb
+Size: 1166
+MD5sum: b8409a89e7488a18fb451f80b0c53fec
+SHA1: c517f9a044735a0d1a4aa2b2155d7957401d26ab
+SHA256: 8a81350149b993a992895e2715f896ebd5877f584e4e210e6688f6004ec98ddc
+Section: Terminal Support
+Description: 2 bash scripts for fixing iFile and MTerminal icons
+Author: OldWorldOrder
+Depiction: http://kzkawaiizenbo.ml:8080/depictions/fixifileicon.html
+Name: Fix iFile Icon
+
+Package: io.pangu.axe7
+Version: 0.3
+Architecture: iphoneos-arm
+Maintainer: Pangu <axe@pangu.io>
+Depends: coreutils-bin, firmware (>= 7.1), firmware (<= 7.1.2)
+Filename: ./debs/io.pangu.axe7_0.3_iphoneos-arm.deb
+Size: 107276
+MD5sum: 3d86ef34bda9287e6081dda95b7593dd
+SHA1: 4267988b1bfdc4578dced131667ccca8eb6eb986
+SHA256: db7e412fd629802e26c8aec481cdca9cfe0a3bc33c7a4cc243351245da5cb172
+Section: System
+Priority: optional
+Description: untethered jailbreak based on pangu exploits
+Author: Pangu <axe@pangu.io>
+Depiction: http://cydia.saurik.com/info/io.pangu.axe7/
+Name: Pangu 7.1-7.1.x Untether
+
+Package: neofetch
+Version: 7.1.0.2
+Architecture: iphoneos-arm
+Maintainer: KawaiiZenbo
+Depends: coreutils, gawk, grep, bash, coreutils-bin, system-cmds, darwintools
+Filename: ./debs/neofetch.deb
+Size: 86880
+MD5sum: 5321d5d7158571ce3ca54e8900d89fb6
+SHA1: 2d0f8ed382266bf162fc2830cc14cbf86a2efa86
+SHA256: 77a3518c53177917c094c601221967512c7a2edd3a304b47aa8c23ad22c175af
+Section: Terminal Support
+Description: A command-line system information tool written in bash 3.2+ from https://github.com/dylanaraps/neofetch, packaged for iOS
+Author: dylanaraps
+Name: neofetch
+
