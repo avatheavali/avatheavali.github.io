@@ -27,6 +27,23 @@ Description: High-speed iOS app decryption tool
 Author: KJCracks
 Name: Clutch 2.0.4
 
+Package: com.nathan.ytadsdisablebg
+Version: 1.0.0-4+debug
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 140
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.ytadsdisablebg_1.0.0-4debug_iphoneos-arm.deb
+Size: 5428
+MD5sum: 5dd88d91674c87d0dd3a9cc160feab17
+SHA1: 7863bac3390afa3c786f9817801085bd8a5378de
+SHA256: 0c887746f3d91440d9641b58cb3556e9d2d6640b54334cdc1ae01c3761967736
+Section: Tweaks
+Priority: optional
+Description: A simple tweak to disable youtube ads, enable background playback, and bring back the old quality selector
+Author: Nathan
+Name: YTAdsDisablebg
+
 Package: io.github.oldworldordr.fixifileicon
 Version: 1.0.1
 Architecture: iphoneos-arm
