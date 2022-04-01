@@ -27,6 +27,22 @@ Description: High-speed iOS app decryption tool
 Author: KJCracks
 Name: Clutch 2.0.4
 
+Package: com.nathan.lowbatteryremover
+Version: 1.0.0-5+debug
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 216
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.lowbatteryremover_1.0.0-5debug_iphoneos-arm.deb
+Size: 4552
+MD5sum: db00006dc754cfdce4d30dbbb96cd3e9
+SHA1: 01563884af79771ce416622e495e7e7da4bb530c
+SHA256: 6f069241f9533216d1399cd626eb22fc008c0608f50bd07a53f56f719a0c9a7c
+Section: Tweaks
+Priority: optional
+Description: A simple tweak that disables the low battery alert
+Name: dismissalarmbutton
+
 Package: com.nathan.ytadsdisablebg
 Version: 1.0.0-4+debug
 Architecture: iphoneos-arm
