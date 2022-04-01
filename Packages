@@ -43,6 +43,22 @@ Priority: optional
 Description: A simple tweak that disables the low battery alert
 Name: dismissalarmbutton
 
+Package: com.nathan.lowbatteryremover
+Version: 1.0.0-8+debug
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 216
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.lowbatteryremover_1.0.0-8debug_iphoneos-arm.deb
+Size: 4550
+MD5sum: c57a257017585649cd0bde1dc400714f
+SHA1: 48e2c87ee4dc05026a9ade5f9d8dfc478f459325
+SHA256: 83242121621fbcaf5fdf4448d1589674d704742d6900cc9d9024af3fa08518c0
+Section: Tweaks
+Priority: optional
+Description: A simple tweak that disables the low battery alert
+Name: LowBatteryRemover
+
 Package: com.nathan.ytadsdisablebg
 Version: 1.0.0-4+debug
 Architecture: iphoneos-arm
