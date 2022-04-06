@@ -28,6 +28,22 @@ Author: KJCracks
 Name: Clutch 2.0.4
 
 Package: com.nathan.lowbatteryremover
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 216
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.lowbatteryremover_1.0.0_iphoneos-arm.deb
+Size: 3658
+MD5sum: e94932885b8833954c0a1e87cb9b232e
+SHA1: 337e8b94cc91224ac7dae6b04fa525c3b1b9f832
+SHA256: c48f3c114a4e6938169c4ecc070a97e258c43f36838e92530e7aab9000e5eed7
+Section: Tweaks
+Priority: optional
+Description: A simple tweak that disables the low battery alert
+Name: LowBatteryRemover
+
+Package: com.nathan.lowbatteryremover
 Version: 1.0.0-5+debug
 Architecture: iphoneos-arm
 Maintainer: Nathan
@@ -74,6 +90,23 @@ Section: Tweaks
 Priority: optional
 Description: A simple tweak that disables the low battery alert
 Name: LowBatteryRemover
+
+Package: com.nathan.ytadsdisablebg
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 152
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.ytadsdisablebg_1.0.0_iphoneos-arm.deb
+Size: 3756
+MD5sum: 43f8f305e35452f1c0d76c2fbe099bec
+SHA1: 3b86e764d2816ff89d9c0fd2eb35399c84a8c67d
+SHA256: ed836e1c034f8b0ec85668b90acd1ac8c8593c28965c0615439e2185900962ab
+Section: Tweaks
+Priority: optional
+Description: A simple tweak to disable youtube ads, enable background playback, and bring back the old quality selector
+Author: Nathan
+Name: YTAdsDisablebg
 
 Package: com.nathan.ytadsdisablebg
 Version: 1.0.0-4+debug
