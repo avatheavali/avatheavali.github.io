@@ -43,54 +43,6 @@ Priority: optional
 Description: A simple tweak that disables the low battery alert
 Name: LowBatteryRemover
 
-Package: com.nathan.lowbatteryremover
-Version: 1.0.0-5+debug
-Architecture: iphoneos-arm
-Maintainer: Nathan
-Installed-Size: 216
-Depends: mobilesubstrate
-Filename: ./debs/com.nathan.lowbatteryremover_1.0.0-5debug_iphoneos-arm.deb
-Size: 4552
-MD5sum: db00006dc754cfdce4d30dbbb96cd3e9
-SHA1: 01563884af79771ce416622e495e7e7da4bb530c
-SHA256: 6f069241f9533216d1399cd626eb22fc008c0608f50bd07a53f56f719a0c9a7c
-Section: Tweaks
-Priority: optional
-Description: A simple tweak that disables the low battery alert
-Name: dismissalarmbutton
-
-Package: com.nathan.lowbatteryremover
-Version: 1.0.0-8+debug
-Architecture: iphoneos-arm
-Maintainer: Nathan
-Installed-Size: 216
-Depends: mobilesubstrate
-Filename: ./debs/com.nathan.lowbatteryremover_1.0.0-8debug_iphoneos-arm.deb
-Size: 4550
-MD5sum: c57a257017585649cd0bde1dc400714f
-SHA1: 48e2c87ee4dc05026a9ade5f9d8dfc478f459325
-SHA256: 83242121621fbcaf5fdf4448d1589674d704742d6900cc9d9024af3fa08518c0
-Section: Tweaks
-Priority: optional
-Description: A simple tweak that disables the low battery alert
-Name: LowBatteryRemover
-
-Package: com.nathan.lowbatteryremover
-Version: 1.0.0-9+debug
-Architecture: iphoneos-arm
-Maintainer: Nathan
-Installed-Size: 216
-Depends: mobilesubstrate
-Filename: ./debs/com.nathan.lowbatteryremover_1.0.0-9debug_iphoneos-arm.deb
-Size: 4342
-MD5sum: f13273b95a85e40c207a69941af226fd
-SHA1: ae18eb2f519d57f78236b7b5f393dc5a253e7119
-SHA256: d0ee531995a9e7306a0f7b78dcdc064fafc52cff379b1dff9f577fa09f395099
-Section: Tweaks
-Priority: optional
-Description: A simple tweak that disables the low battery alert
-Name: LowBatteryRemover
-
 Package: com.nathan.ytadsdisablebg
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -102,23 +54,6 @@ Size: 3756
 MD5sum: 43f8f305e35452f1c0d76c2fbe099bec
 SHA1: 3b86e764d2816ff89d9c0fd2eb35399c84a8c67d
 SHA256: ed836e1c034f8b0ec85668b90acd1ac8c8593c28965c0615439e2185900962ab
-Section: Tweaks
-Priority: optional
-Description: A simple tweak to disable youtube ads, enable background playback, and bring back the old quality selector
-Author: Nathan
-Name: YTAdsDisablebg
-
-Package: com.nathan.ytadsdisablebg
-Version: 1.0.0-4+debug
-Architecture: iphoneos-arm
-Maintainer: Nathan
-Installed-Size: 140
-Depends: mobilesubstrate
-Filename: ./debs/com.nathan.ytadsdisablebg_1.0.0-4debug_iphoneos-arm.deb
-Size: 5428
-MD5sum: 5dd88d91674c87d0dd3a9cc160feab17
-SHA1: 7863bac3390afa3c786f9817801085bd8a5378de
-SHA256: 0c887746f3d91440d9641b58cb3556e9d2d6640b54334cdc1ae01c3761967736
 Section: Tweaks
 Priority: optional
 Description: A simple tweak to disable youtube ads, enable background playback, and bring back the old quality selector
