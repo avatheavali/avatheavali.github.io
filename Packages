@@ -43,6 +43,22 @@ Priority: optional
 Description: A simple tweak that disables the low battery alert
 Name: LowBatteryRemover
 
+Package: com.nathan.trolllock
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 420
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.trolllock_1.0.1_iphoneos-arm.deb
+Size: 168648
+MD5sum: 8c497fbec9258ea35a0919189de58007
+SHA1: f8686a4f729e322b331d337b21ac0495d543fc0c
+SHA256: 588a044e0ed67f7797a438a65dc63d6b0a7bc8bfa07c6d216efd0a937c8bb7ca
+Section: Tweaks
+Priority: optional
+Description: Tweak that turns the faceID glyph into a trollface
+Name: TrollLock
+
 Package: com.nathan.ytadsdisablebg
 Version: 1.0.0
 Architecture: iphoneos-arm
