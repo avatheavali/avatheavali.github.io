@@ -47,13 +47,13 @@ Package: com.nathan.trolllock
 Version: 1.0.1
 Architecture: iphoneos-arm
 Maintainer: Nathan
-Installed-Size: 420
+Installed-Size: 456
 Depends: mobilesubstrate
 Filename: ./debs/com.nathan.trolllock_1.0.1_iphoneos-arm.deb
-Size: 168648
-MD5sum: 8c497fbec9258ea35a0919189de58007
-SHA1: f8686a4f729e322b331d337b21ac0495d543fc0c
-SHA256: 588a044e0ed67f7797a438a65dc63d6b0a7bc8bfa07c6d216efd0a937c8bb7ca
+Size: 168966
+MD5sum: 05e958c72a242d8410a40c9d656c2b5b
+SHA1: dcb9bd135772d2ea8119910bfaa1647a5459fab0
+SHA256: b553e5828970c4b0d2016a21ff3dc928ff2fd4d5b2f9df79a1870fbcb8e40257
 Section: Tweaks
 Priority: optional
 Description: Tweak that turns the faceID glyph into a trollface
