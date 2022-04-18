@@ -59,6 +59,22 @@ Priority: optional
 Description: Tweak that turns the faceID glyph into a trollface
 Name: TrollLock
 
+Package: com.nathan.trolllock
+Version: 1.0.2
+Architecture: iphoneos-arm
+Maintainer: Nathan
+Installed-Size: 452
+Depends: mobilesubstrate
+Filename: ./debs/com.nathan.trolllock_1.0.2_iphoneos-arm.deb
+Size: 168952
+MD5sum: 4a63e2224e71163726a3f54ce42a8b68
+SHA1: 962bdf647f41487e33448175b8bcb34e63136f8c
+SHA256: ae997bc5282a78ae215b6dcce54064c71feef55eb1046b2b6eae6306b2c11e8c
+Section: Tweaks
+Priority: optional
+Description: Tweak that turns the faceID glyph into a trollface
+Name: TrollLock
+
 Package: com.nathan.ytadsdisablebg
 Version: 1.0.0
 Architecture: iphoneos-arm
