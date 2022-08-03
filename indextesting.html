@@ -114,5 +114,335 @@ body {
         <a href="https://twitch.tv/avatheavali">twitch</a><br>
         <hr>
         <a href="https://kawaiizenbo.me/">site based on kawaiizenbo's site, click here to go to her site</a>
-    </body>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+		<script src="sentry.min.js"></script>
+
+		<script src="release-info.js"></script>
+
+		<script type="module" src="scoresaber_lib.js"></script>
+		<script type="module" src="twitch-hooks_lib.js"></script>
+
+		<style type="text/css">
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+			/** GENERAL LAYOUT */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.icon {
+	width: 1.5ex;
+	height: 1.5ex;
+}
+
+
+/** GENERAL STYLING, ADAPTED TO THEME */
+* {
+	font-family: "Verdana", sans-serif !important;
+}
+
+body, div.light {
+	--theme-bg-color: #ffffff;
+	--theme-text-color: #19171c;
+	--theme-link-color: #6441A4;
+}
+body.dark, div.dark {
+	--theme-bg-color: #0f0e11;
+	--theme-text-color: #dad8de;
+	--theme-link-color: #B8A1E6;
+}
+
+body, div {
+	background-color: var(--theme-bg-color);
+}
+* {
+	color: var(--theme-text-color);
+}
+a {
+	color: var(--theme-link-color);
+}
+.icon {
+	fill: var(--theme-text-color);
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+		</style>
+	</head>
+	<body id="root">
+		<noscript>
+		You need to enable JavaScript to run this app.
+		</noscript>
+
+		
+
+<style type="text/css">
+    #header {
+    height: 75px;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: left center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header span {
+    font-size: 135%;
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+#load-splash {
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#load-splash #error-output {
+    font-size: 1px;
+    opacity: 0;
+}
+
+#content {
+    --accent-color: #008139;
+}
+
+#flag-img {
+    height: 1.4ex;
+    width: auto;
+}
+
+.statistic {
+    margin-top: 10px;
+}
+.statistic .label, .statistic .value {
+    display: inline-block;
+    vertical-align: top;
+}
+.statistic .label {
+    font-size: 75%;
+    padding-left: 7px;
+}
+.statistic .value *:not(:nth-child(1)) {
+    margin-top: 3px;
+}
+.statistic .value .highlight {
+    font-size: 110%;
+    color: var(--accent-color);
+}
+.statistic .value .highlight span {
+    color: var(--accent-color);
+}
+.statistic .value .highlight#pp-value {
+    font-size: 120%;
+}
+.statistic .value .note {
+    font-size: 65%;
+}
+.statistic .value .note .icon {
+    margin-right: -2px;
+}
+
+.bottom-note {
+    padding-top: 21px;
+    padding: 21px 8px 0;
+
+    font-size: 60%;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* minimal Line Awesome */
+@font-face{
+    font-family: Line Awesome Free;
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("./fonts/la.woff2") format("woff2"), url("./fonts/la.ttf") format("truetype");
+}
+
+.la {
+    font-family: Line Awesome Free !important;
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.la-angle-down:before {
+  content: "\f107";
+}
+
+.la-angle-up:before {
+  content: "\f106";
+}
+        
+</style>
+
+
+<div id="header">
+    <span data-translation-de="Mein ScoreSaber Rang">
+        My ScoreSaber Rank
+    </span>
+</div>
+
+<div id="load-splash">
+    <div>
+        <span data-translation-de="Lade..." id="load-splash-text">
+            Loading...
+        </span>
+    </div>
+    <div id="note-error-not-found" class="bottom-note" style="display: none;"
+        data-translation-de="Spieler nicht auf ScoreSaber gefunden"
+    >
+        Player was not found on ScorSsaber
+    </div>
+    <div id="note-error-rate-limit" class="bottom-note" style="display: none;"
+        data-translation-de="Zu viele Anfragen, bitte versuche es später noch einmal"
+    >
+        Too many requests, please try again later
+    </div>
+    <div id="note-error" class="bottom-note" style="display: none;"
+        data-translation-de="Unerwarteter Fehler, Details können aktuell leider nicht angezeigt werden"
+    >
+        Unexpected error, can't display details at the moment
+    </div>
+</div>
+
+<div id="content" class="hidden">
+    <div id="global-rank-stat" class="statistic">
+        <span class="label" data-translation-de="globaler Rang:">
+            global Rank:
+        </span>
+        <span class="value">
+            <div>
+                <span class="highlight">
+                    #<span id="global-rank-value">900.000</span>
+                </span>
+                <span class="note">
+                    (top <span id="global-rank-percentile">99.99</span>%)
+                </span>
+            </div>
+            <div class="note">
+                <span data-translation-de="heute:">today:</span>
+                <i id="global-rank-change-today-icon" class="la la-angle-down"></i>
+                <span id="global-rank-change-today">100.000</span>
+                <span data-translation-de="diese Woche:">this week:</span>
+                <i id="global-rank-change-week-icon" class="la la-angle-down"></i>
+                <span id="global-rank-change-week">100.000</span>
+            </div>
+        </span>
+    </div>
+    <div id="country-rank-stat" class="statistic">
+        <span class="label" data-translation-de="nationaler Rang:">
+            local Rank:
+        </span>
+        <span class="value">
+            <span class="highlight">
+                #<span id="country-rank-value">900.000</span>
+            </span>
+            <span class="note">
+                in <img src="flags/aq.png" title="Country-Code: AQ" id="flag-img">
+            </span>
+        </span>
+    </div>
+    <div id="pp-stat" class="statistic">
+        <span class="label">
+            PP:
+        </span>
+        <span class="value">
+            <span class="highlight" id="pp-value">
+                9000.000.000.000,99
+            </span>
+        </span>
+    </div>
+    <div id="note-inactive" class="bottom-note" style="display: none;"
+        data-translation-de="die letzte Session ist zu alt um mehr Details anzuzeigen :/"
+    >
+        last play session is too long ago to show more data :o
+    </div>
+    <div id="note-banned" class="bottom-note" style="display: none;"
+        data-translation-de="Account ist gebannt :o"
+    >
+        account is banned :o
+    </div>
+</div>
+
+<script type="module" src="panel.js"></script>
+
+
+	</body>
+</html>
 </html>
