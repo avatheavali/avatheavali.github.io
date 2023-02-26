@@ -1,0 +1,133 @@
+body
+{
+    font-family: sans-serif;
+    text-align: center;
+    color: #1f1017;
+    background-color: pink;
+    background-image: url("bg.jpeg");
+    text-shadow: 0.5pt 0.5pt #fbbfcb77;
+}
+
+a 
+{ 
+    color: palevioletred;
+    transition: color 0.3s;
+}
+
+a:visited 
+{ 
+    color: palevioletred;
+}
+
+a:hover
+{
+    color: pink;
+}
+
+hr
+{
+    border: 1px palevioletred solid;
+    border-radius: 2px;
+}
+
+#main
+{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #ffffed;
+    background-color: #ffffedaa;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: palevioletred;
+    border-radius: 30px;
+    -webkit-backdrop-filter: blur(4px);
+    -o-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.code-block
+{
+    font-family: monospace;
+    font-size: 12pt;
+    background-color: #0f000777;
+    border-radius: 3px;
+    color: #ffffed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button-link
+{
+    width: 25%;
+    height: 56px;
+    background-color: #fbbfcb;
+    background-color: #fbbfcbaa;
+    color: white;
+    font-size: large;
+    border-width: 3px;
+    border-style: solid;
+    border-color: palevioletred;
+    border-radius: 30px;
+    transition: border-color 0.3s;
+    margin-bottom: 4px;
+}
+
+.button-link:hover
+{
+    border-color: pink;
+}
+
+@media (prefers-color-scheme: dark) 
+{
+    #main
+    {
+        background-color: #1f1017;
+        background-color: #1f1017aa;
+    }
+    .button-link
+    {
+        background-color: #1f1017;
+        background-color: #1f1017aa;
+    }
+    body
+    {
+        color: #ffffed;
+    }
+    a 
+    { 
+        color: pink;
+    }
+
+    a:visited 
+    { 
+        color: pink;
+    }
+
+    a:hover
+    {
+        color: palevioletred;
+    }
+}
+
+@media screen and (max-width: 1200px) 
+{
+    #main
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) 
+{
+    .button-link
+    {
+        width: 49%;
+        height: 72px;
+        font-size: large;
+        margin-bottom: 8px;
+    }
+}
