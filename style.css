@@ -131,3 +131,25 @@ hr
         margin-bottom: 8px;
     }
 }
+
+#chrome-warning
+{
+    background-color: red !important;
+    width: 100%;
+    color: white !important;
+    display: none;
+    text-align: center;
+}
+
+#chrome-warning a
+{
+    color: turquoise;
+}
+
+#chrome-warning a:visited {
+    color: turquoise;
+}
+
+#chrome-warning a:hover {
+    color: turquoise;
+}
