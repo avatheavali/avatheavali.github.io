@@ -10,6 +10,18 @@
 </head>
 
 <body>
+<div id="chrome-warning"><span>
+        Google Chrome and Chromium-based browsers (such as Microsoft Edge, Opera, and Brave) are a threat to the future of the internet.<br>
+        Please consider switching to a browser such as <a href="https://firefox.com">Firefox</a> or Safari.
+        </span></div>
+        <script>
+            var agent = navigator.userAgent;
+            if (agent.search("Chrome") != -1)
+            {
+                document.getElementById("chrome-warning").style.display = "initial";
+            }
+        </script>
+  
         <div id="main">
 <img src="pfp.jpg" height="128">
 <h1>hii, welcome to the home of the eepymeowers!</h1>
